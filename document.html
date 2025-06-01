@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <style>
+
+      body, 
+a, button, input[type="button"], input[type="submit"] {
+  cursor: none !important;
+}
+
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  z-index: 10000;
+  will-change: transform;
+  filter: drop-shadow(0 0 3px #1e90ff);
+  transition: fill 0.2s ease, filter 0.2s ease;
+}
+
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(30, 144, 255, 0.2);
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.6);
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect: change cursor color on links and buttons */
+.hovered .custom-cursor svg path {
+  fill: #ff6347; /* tomato red */
+  stroke: #cc4b39;
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+.hovered .cursor-trail {
+  background: rgba(255, 99, 71, 0.3);
+  box-shadow: 0 0 15px rgba(255, 99, 71, 0.8);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Click animation */
+.custom-cursor.clicking {
+  animation: click-pulse 0.5s ease-in-out forwards;
+}
+
+@keyframes click-pulse {
+  0% {
+    transform: translate(var(--tx), var(--ty)) scale(1);
+    filter: drop-shadow(0 0 4px #1e90ff);
+  }
+  30% {
+    transform: translate(var(--tx), var(--ty)) scale(1.3);
+    filter: drop-shadow(0 0 12px #1e90ff);
+  }
+  60% {
+    transform: translate(var(--tx), var(--ty)) scale(1.15);
+    filter: drop-shadow(0 0 8px #1e90ff);
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) scale(1);
+    filter: drop-shadow(0 0 4px #1e90ff);
+  }
+}
+    </style>
+
+
+
+    <div class="custom-cursor">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 3 L17 12 L6 13 L14 21 Z"
+          fill="#1e90ff"
+          stroke="#1768c0"
+          stroke-width="1.5"
+        />
+      </svg>
+    </div>
+    <div class="cursor-trail"></div>
+
+
+
+
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Abhay Mallick</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="document.html">document</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Loader
+    <div id="loader">
+      <div class="spinner"></div>
+    </div> -->
+
+    <section id="documents">
+      <h2 class="section-title">Documents & Certifications</h2>
+      <div class="document-grid">
+        <div class="document-card">
+          <div class="doc-header">
+            <h4>Cadd Centre</h4>
+            <span>Issued: Jan 2024</span>
+          </div>
+          <p>
+            Completed hands-on training in Essential in JAVA for Professionals during the period of 15-Oct-2023 to 30-Nov-2023  .
+          </p>
+          <a href="documents/CADD Java.pdf" class="btn btn-download" download>Download</a>
+        </div>
+
+        <div class="document-card">
+          <div class="doc-header">
+            <h4>Soft-Tech Solutions</h4>
+            <span>Issued: August 2023</span>
+          </div>
+          <p>
+             Industrial
+            Internship Training Program during the period of 10th July 2023 to 20th Aug 2023
+            on Java Programming
+          </p>
+          <a href="documents/soft tech java.pdf" class="btn btn-download" download>Download</a>
+        </div>
+
+        <div class="document-card">
+          <div class="doc-header">
+            <h4>Code Infosystem</h4>
+            <span>Issued: April 2022</span>
+          </div>
+          <p>
+             Industrial
+Training for 4 Week (From 15th Mar. 2022 to 13th Apr. 2022) in Code Infosystem Private
+Limited of Web Application Development with Php & MySql.
+          </p>
+          <a href="documents/code infosystem web.pdf" class="btn btn-download" download>Download</a>
+        </div>
+
+        <div class="document-card">
+          <div class="doc-header">
+            <h4>Bit Workshop</h4>
+            <span>Issued: January 2024</span>
+          </div>
+          <p>
+            Participated in a 3-day workshop on Aptitude & reasoning
+          </p>
+          <a href="documents/bit aptitude.pdf" class="btn btn-download" download>Download</a>
+        </div>
+
+        <div class="document-card">
+          <div class="doc-header">
+            <h4>Satguru Institute</h4>
+            <span>Issued: Sept 2023</span>
+          </div>
+          <p>
+            Completed certification  seven
+days' Workshop
+ from 30th May 2022 to
+ 5th June 2022 on
+"Web Design & Development".
+          </p>
+          <a href="documents/Satguru Institude web.pdf" class="btn btn-download" download>Download</a>
+        </div>
+
+        <div class="document-card">
+          <div class="doc-header">
+            <h4>The Kiran Academy, Pune</h4>
+            <span>Issued: June 2024</span>
+          </div>
+          <p>
+            Completed internship program specializing in Internship for Java Full Stack
+at The Kiran Academy from 10/01/2024 to
+ 25/06/2024
+          </p>
+          <a href="documents/TheKiranAcademy.pdf" class="btn btn-download" download>Download</a>
+        </div>
+
+        <div class="document-card">
+          <div class="doc-header">
+            <h4>Inspire Engineering Services</h4>
+            <span>Issued: Jan 2024</span>
+          </div>
+          <p>
+           Completed
+his Industrial Internship Training Program during the period of 16th
+July 2024 to 28th Jan 2025 on “ Full Stack Software Development “ 
+          </p>
+          <a href="documents/Inspire Engineering.pdf" class="btn btn-download" download>Download</a>
+        </div>
+
+        <div class="document-card">
+          <div class="doc-header">
+            <h4>Resume</h4>
+            <span>Issued: Jan 2025</span>
+          </div>
+          <p>Latest April updated Resume</p>
+          <a href="documents/resume (1).pdf" class="btn btn-download" download>Download</a>
+        </div>
+      </div>
+    </section>
+    <style>
+      .btn-download {
+        display: inline-block;
+        background-color: #4db8ff;
+        color: #000;
+        font-weight: 700;
+        padding: 0.7rem 1.5rem;
+        border-radius: 6px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .btn-download:hover {
+        background-color: #013c5a;
+      }
+    </style>
+
+    <footer class="footer py-4 px-3">
+      <div class="container-fluid px-4">
+        <div class="row text-center text-md-start align-items-center">
+          <!-- Left: Icons -->
+          <div
+            class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start gap-3"
+          >
+            <a
+              href="https://github.com/Abhay2204"
+              target="_blank"
+              class="footer-icon"
+              aria-label="GitHub"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+            <a
+              href="https://github.com/Abhay2204"
+              target="_blank"
+              class="footer-icon"
+              aria-label="LinkedIn"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Center: Info -->
+          <div class="col-md-4 mb-3 mb-md-0 footer-text text-center">
+            <div><i class="footer-text"></i> abhaymallick.dev@gmail.com</div>
+            <div><i class="footer-text"></i> Chandrapur,Maharashtra</div>
+          </div>
+
+          <!-- Right: Button -->
+          <div class="col-md-4 text-center text-md-end">
+            <a
+              href="contact.html"
+              class="btn btn-outline-info btn-sm rounded-pill shadow-sm"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+
+        <hr class="border-secondary mt-4" />
+
+        <div class="text-center footer-text">
+          &copy; 2025 Abhay Mallick. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    
+<script>
+
+  const cursor = document.querySelector('.custom-cursor');
+const trail = document.querySelector('.cursor-trail');
+let mouseX = 0, mouseY = 0;
+let trailX = 0, trailY = 0;
+
+// Update cursor position instantly
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+
+  cursor.style.setProperty('--tx', `${mouseX - 12}px`);
+  cursor.style.setProperty('--ty', `${mouseY - 12}px`);
+  cursor.style.transform = `translate(${mouseX - 12}px, ${mouseY - 12}px)`;
+});
+
+// Animate trailing circle smoothly
+function animate() {
+  trailX += (mouseX - trailX) * 0.15;
+  trailY += (mouseY - trailY) * 0.15;
+
+  const waveX = Math.sin(Date.now() * 0.02) * 2;
+  const waveY = Math.cos(Date.now() * 0.02) * 2;
+
+  trail.style.transform = `translate(${trailX - 8 + waveX}px, ${trailY - 8 + waveY}px)`;
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+// Hover effect on links and buttons
+const hoverTargets = document.querySelectorAll('a, button, input[type="button"], input[type="submit"]');
+
+hoverTargets.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    document.body.classList.add('hovered');
+  });
+  el.addEventListener('mouseleave', () => {
+    document.body.classList.remove('hovered');
+  });
+});
+
+// Click animation
+document.addEventListener('mousedown', () => {
+  cursor.classList.add('clicking');
+});
+
+document.addEventListener('mouseup', () => {
+  cursor.classList.remove('clicking');
+});
+
+</script>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

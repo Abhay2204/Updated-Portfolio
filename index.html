@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Tech Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  
+
+</head>
+<body>
+
+
+<div class="custom-cursor">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 3 L17 12 L6 13 L14 21 Z" fill="#1e90ff" stroke="#1768c0" stroke-width="1.5" />
+  </svg>
+</div>
+<div class="cursor-trail"></div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Abhay Mallick</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="document.html">Document</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Landing Section -->
+ <header id="home" class="d-flex flex-column justify-content-center align-items-center text-center position-relative">
+  <div class="background-dots"></div>
+   <img src="images/profile.PNG" alt="Profile Photo" class="profile-photo mb-4" />
+  <h1 class="display-4 animate-text">Hey, I'm <span class="highlight">ABHAY MALLICK</span></h1>
+  <p class="lead animate-text">Full Stack & Backend Developer • Kotlin Enthusiast • AI Crafter</p>
+  <a href="#about" class="btn btn-outline-light mt-4">Explore More ↓</a>
+</header>
+
+
+  <!-- About Section -->
+  <section id="about" class="container text-center">
+    <h2 class="mb-4">About Me</h2>
+    <p class="mb-4">
+      I'm a passionate developer with strong skills in backend systems, full-stack development, and AI integration.
+      With hands-on experience in Node.js, Kotlin, and cloud services, I build performance-focused apps that deliver real value.
+    </p>
+
+    <!-- Resume Button -->
+    <a href="documents/Resume.pdf" class="btn btn-accent mb-4" download>Download Resume</a>
+
+    <!-- Tech Stack Icons -->
+ <div class="d-flex flex-wrap justify-content-center gap-4 mt-4 tech-icons">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/html5.svg" alt="HTML5" style="width:40px; height:40px;" />
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/css3.svg" alt="CSS3" style="width:40px; height:40px;" />
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/javascript.svg" alt="JavaScript" style="width:40px; height:40px;" />
+ 
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/bootstrap.svg" alt="Bootstrap" style="width:40px; height:40px;" />
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/kotlin.svg" alt="Kotlin" style="width:40px; height:40px;" />
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/firebase.svg" alt="Firebase" style="width:40px; height:40px;" />
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/amazonaws.svg" alt="AWS" style="width:40px; height:40px;" />
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/git.svg" alt="Git" style="width:40px; height:40px;" />
+</div>
+
+
+<section id="journey" class="container py-5">
+  <h2 class="text-center mb-5 fw-bold text-primary">🚀 My Career Timeline</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item d-flex align-items-start mb-5">
+      <div class="timeline-icon bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3">
+        <i class="bi bi-code-slash fs-4"></i>
+      </div>
+      <div class="timeline-content bg-light p-4 rounded shadow-sm flex-grow-1">
+        <h5 class="text-primary fw-bold mb-1">2022 – 2023</h5>
+        <h6 class="fw-semibold mb-2">Web Development Journey</h6>
+        <p class="mb-0 text-secondary">Built a strong foundation in HTML, CSS, JavaScript, Node.js, MongoDB & SQL. Completed multiple full-stack projects focusing on performance and responsiveness.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item d-flex align-items-start mb-5">
+      <div class="timeline-icon bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3">
+        <i class="bi bi-terminal-fill fs-4"></i>
+      </div>
+      <div class="timeline-content bg-light p-4 rounded shadow-sm flex-grow-1">
+        <h5 class="text-primary fw-bold mb-1">2023 – 2024</h5>
+        <h6 class="fw-semibold mb-2">Learned Core & Advanced Java</h6>
+        <p class="mb-0 text-secondary">Learned OOP principles, multithreading, sockets, JDBC, and Hibernate. Created Java-based tools and backend systems using Spring Boot and REST APIs.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item d-flex align-items-start mb-5">
+      <div class="timeline-icon bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3">
+        <i class="bi bi-mortarboard-fill fs-4"></i>
+      </div>
+      <div class="timeline-content bg-light p-4 rounded shadow-sm flex-grow-1">
+        <h5 class="text-primary fw-bold mb-1">Jan – Jun 2024</h5>
+        <h6 class="fw-semibold mb-2">Internship at The Kiran Academy, Pune</h6>
+        <p class="mb-0 text-secondary">Completed industry-grade training in Java Full Stack. Worked on real projects with Spring Boot, JSP/Servlets, and MySQL integration.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item d-flex align-items-start mb-5">
+      <div class="timeline-icon bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3">
+        <i class="bi bi-android2 fs-4"></i>
+      </div>
+      <div class="timeline-content bg-light p-4 rounded shadow-sm flex-grow-1">
+        <h5 class="text-primary fw-bold mb-1">Jul 2024 – Jan 2025</h5>
+        <h6 class="fw-semibold mb-2">Internship at Inspire Engineering</h6>
+        <p class="mb-0 text-secondary">Focused on Kotlin, Jetpack Compose, and Firebase. Built modern Android apps with real-time databases, authentication, and AI integration.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item d-flex align-items-start">
+      <div class="timeline-icon bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3">
+        <i class="bi bi-stars fs-4"></i>
+      </div>
+      <div class="timeline-content bg-light p-4 rounded shadow-sm flex-grow-1">
+        <h5 class="text-primary fw-bold mb-1">2025 – Present</h5>
+        <h6 class="fw-semibold mb-2">Advanced Android Developer</h6>
+        <p class="mb-0 text-secondary">Building high-performance Android applications using Jetpack Compose and AI-powered features. Currently working on multiple live projects with production-grade architecture.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="services" class="offered-services container py-5">
+<h2 class="text-center mb-5 animate-text">
+  <span style="color: #0056b3;">🚀 Offered</span> <span style="color: #0056b3">Services</span>
+</h2>
+
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-4 service-box animate-text">
+      <div class="service-card h-100 p-4 text-center">
+        <i class="bi bi-bar-chart-line-fill service-icon mb-3"></i>
+        <h4 class="mb-2 highlight">Develop Business Online</h4>
+        <p>Bring your business online with a complete digital strategy. From branding to deployment, I help you grow through cutting-edge technology and smart solutions.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 service-box animate-text">
+      <div class="service-card h-100 p-4 text-center">
+        <i class="bi bi-laptop-fill service-icon mb-3"></i>
+        <h4 class="mb-2 highlight">Website Development</h4>
+        <p>Modern, responsive, and fast websites using HTML, CSS, JavaScript, Bootstrap, Node.js, and databases — perfect for portfolios, businesses, or startups.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 service-box animate-text">
+      <div class="service-card h-100 p-4 text-center">
+        <i class="bi bi-phone-fill service-icon mb-3"></i>
+        <h4 class="mb-2 highlight">Android App Development</h4>
+        <p>Native Android apps built with Kotlin and Jetpack Compose. Firebase integration, AI features, and clean UI to turn your app idea into reality.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="why-hire-me" class="container py-5">
+  <h2 class="text-center mb-4 fw-bold text-primary">Why Hire Me?</h2>
+
+  <div class="text-center mb-5">
+    <p id="dynamic-text" class="fs-4 fst-italic text-secondary flip-text"></p>
+  </div>
+
+  <div class="row g-4 justify-content-center">
+
+    
+
+  <div class="row g-4 justify-content-center">
+    <!-- Repeat for each skill card with data-code -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="skill-card" tabindex="0" data-code="<h1>Hello World!</h1>">
+        <h5 class="skill-title">HTML, CSS & JavaScript</h5>
+        <p class="skill-desc">Creating responsive and interactive web pages with clean markup and modern design.</p>
+        <pre class="code-snippet"></pre>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="skill-card" tabindex="0" data-code="console.log('Hello World!');">
+        <h5 class="skill-title">Node.js & Express.js</h5>
+        <p class="skill-desc">Building fast, scalable backend servers and REST APIs for web and mobile apps.</p>
+        <pre class="code-snippet"></pre>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="skill-card" tabindex="0" data-code='System.out.println("Hello World!");'>
+        <h5 class="skill-title">Core & Advanced Java</h5>
+        <p class="skill-desc">Expertise in OOP, multithreading, and backend development with Spring Boot.</p>
+        <pre class="code-snippet"></pre>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="skill-card" tabindex="0" data-code='println("Hello World!")'>
+        <h5 class="skill-title">Kotlin & Jetpack Compose</h5>
+        <p class="skill-desc">Creating modern Android apps with declarative UI and clean architecture.</p>
+        <pre class="code-snippet"></pre>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="skill-card" tabindex="0" data-code="SELECT 'Hello World!';">
+        <h5 class="skill-title">MongoDB & SQL</h5>
+        <p class="skill-desc">Designing and managing efficient databases for diverse applications.</p>
+        <pre class="code-snippet"></pre>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="skill-card" tabindex="0" data-code="<?php echo 'Hello World!'; ?>">
+        <h5 class="skill-title">WordPress</h5>
+        <p class="skill-desc">Building customizable, SEO-friendly websites and blogs.</p>
+        <pre class="code-snippet"></pre>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="skill-card" tabindex="0" data-code="aws s3 ls
+      # Hello World AWS CLI">
+        <h5 class="skill-title">AWS</h5>
+        <p class="skill-desc">Deploying and managing cloud infrastructure with reliability and scalability.</p>
+        <pre class="code-snippet"></pre>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="skill-card" tabindex="0" data-code='git commit -m "Hello World"'>
+        <h5 class="skill-title">Git & GitHub</h5>
+        <p class="skill-desc">Version control and collaboration for efficient software development.</p>
+        <pre class="code-snippet"></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Developed Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Recipe Reveal -->
+    <div class="project-card" tabindex="0">
+      <img src="images/project-1.jpg" alt="Recipe Reveal" class="project-image" />
+      <div class="project-name-below">Recipe Reveal</div>
+      <div class="project-overlay">
+        <p class="project-tech">HTML,CSS, JavaScript,APIs, Node.js, MongoDB</p>
+        <ul class="project-features">
+          <li>Personalized recipe suggestions according to ingidients you have</li>
+          <li>more than 9000 recipies</li>
+          <li>Can share personal special recipes</li>
+          <li>AI-powered Health Chatbot</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bit Campus Navigator -->
+    <div class="project-card" tabindex="0">
+      <img src="images/CAMPUS.png" alt="Bit Campus Navigator" class="project-image" />
+      <div class="project-name-below">Bit Campus Navigator</div>
+      <div class="project-overlay">
+        <p class="project-tech">kotlin, Jetpackcompose,XML, Google Map Api</p>
+        <ul class="project-features">
+          <li>Real-time navigation for college spaces</li>
+          <li>Search any room/facility by name</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pox Detector -->
+    <div class="project-card" tabindex="0">
+      <img src="images/BARK.png" alt="Pox Detector" class="project-image" />
+      <div class="project-name-below">Byond Bark</div>
+      <div class="project-overlay">
+        <p class="project-tech">kotlin, Jetpackcompose,Firebase,NetmindApi</p>
+        <ul class="project-features">
+          <li>Detects pets mood by  images</li>
+          <li> Species Identification using   images</li>
+          <li>AI powered Pet Chatbot</li>
+          <li>Disease Detection using image or symptoms</li>
+          <li>helps to resque abandant pets, animals</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- More Projects Button -->
+   <!-- More Projects Button -->
+  <div style="text-align: center; margin-top: 7rem;">
+    <a href="projects.html" class="more-projects-btn" style="
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #4db8ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    " 
+    onmouseover="this.style.backgroundColor='#3399ff'" onmouseout="this.style.backgroundColor='#4db8ff'">
+      More Projects
+    </a>
+  </div>
+
+</section>
+</section>
+
+<footer class="footer py-4 px-3">
+  <div class="container-fluid px-4">
+
+    <div class="row text-center text-md-start align-items-center">
+
+      <!-- Left: Icons -->
+      <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start gap-3">
+        <a href="https://github.com/Abhay2204" target="_blank" class="footer-icon" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://github.com/Abhay2204" target="_blank" class="footer-icon" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+
+      <!-- Center: Info -->
+      <div class="col-md-4 mb-3 mb-md-0 footer-text text-center">
+        <div><i class="footer-text"></i> abhaymallick.dev@gmail.com</div>
+        <div><i class="footer-text"></i> Chandrapur,Maharashtra</div>
+      </div>
+
+      <!-- Right: Button -->
+      <div class="col-md-4 text-center text-md-end">
+        <a href="contact.html" class="btn btn-outline-info btn-sm rounded-pill shadow-sm">Contact Me</a>
+      </div>
+    </div>
+
+    <hr class="border-secondary mt-4" />
+
+    <div class="text-center footer-text">
+      &copy; 2025 Abhay Mallick. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
